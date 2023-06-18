@@ -1,0 +1,19 @@
+version: '3.10'
+services:
+  cassandra:
+    image: cassandra:latest
+    ports:
+      - "9042:9042"
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+  datascience:
+    build: ./datascience
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/app/notebooks
+      - ./data:/app/data
+    links:
+      - cassandra
+volumes:
+  cassandra_data:
