@@ -1,4 +1,4 @@
-version: '3.10'
+version: '3'
 services:
   cassandra:
     image: cassandra:latest
@@ -11,9 +11,9 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./notebooks:/app/notebooks
-      - ./data:/app/data
+      - ./datascience/notebooks:/app/notebooks
     links:
       - cassandra
 volumes:
   cassandra_data:
+
