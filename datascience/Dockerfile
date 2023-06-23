@@ -2,7 +2,7 @@ FROM python:3.10
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir jupyter pandas numpy matplotlib scikit-learn cassandra-driver
+RUN pip install --no-cache-dir jupyter pandas numpy matplotlib scikit-learn cassandra-driver seaborn
 
 RUN mkdir data
 

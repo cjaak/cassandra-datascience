@@ -1,4 +1,4 @@
-# Studienabbruch Vorhersage mit Apache Cassandra und Machine Learning
+# Einsatz von NoSQL Apache Cassandra zur Untersuchung von Studienabbrüchen
 
 Dieses Repository enthält den Code und die Daten für eine Studienarbeit, die die Anwendbarkeit und Wirksamkeit von Apache Cassandra und maschinellem Lernen bei der Vorhersage von Studienabbrüchen untersucht.
 
@@ -9,20 +9,22 @@ Dieses Repository enthält den Code und die Daten für eine Studienarbeit, die d
 ## Projektstruktur
 
 ```
+.
 ├── data
 ├── datascience
-│   ├── data
-│   │   ├── assessments.csv
-│   │   ├── courses.csv
-│   │   ├── studentAssessment.csv
-│   │   ├── studentInfo.csv
-│   │   ├── studentRegistration.csv
-│   │   ├── studentVle.csv
-│   │   └── vle.csv
-│   ├── Dockerfile
-│   └── notebooks
-│       ├── exploratory_data_analysis.ipynb
-│       └── load_data.ipynb
+│   ├── data
+│   │   ├── assessments.csv
+│   │   ├── courses.csv
+│   │   ├── studentAssessment.csv
+│   │   ├── studentInfo.csv
+│   │   ├── studentRegistration.csv
+│   │   ├── studentVle.csv
+│   │   └── vle.csv
+│   ├── Dockerfile
+│   └── notebooks
+│       ├── exploratory_data_analysis.ipynb
+│       ├── load_data.ipynb
+│       └── prediction_model.ipynb
 ├── docker-compose.yml
 ├── notebooks
 └── README.md
